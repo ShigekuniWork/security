@@ -8,9 +8,9 @@ do
         var=$(echo $var | base64)
 
         #<---- If condition here:
-        if [[ "$var" == *"$value"* ]] && [ ${#var} -gt 113450 ]; 
+        if [[ "$var" == *"$value"* ]] && [[ ${#var} -gt 113450 ]]; 
         then
-            echo "${var: -20}"
+            echo "${var: -19}"
             break
         fi
 done
